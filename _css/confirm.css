@@ -1,0 +1,49 @@
+body {
+  background-color: #333333;
+  margin: 0;
+  
+}
+
+.ty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+  height: 100%;
+  align-items: center;
+  gap: 1em;
+}
+.thankyou {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 0%;
+}
+.ty_desc {
+  margin-top: 0%;
+  font-size: 2em;
+  color: white;
+}
+.btn_confirm {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  cursor: default;
+  padding-top: 1.3em;
+  font-size: 1.6em;
+}
+.btn_confirm::before {
+  content: "";
+  background-color: rgb(89, 204, 208);
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: transform 300ms ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+.btn_confirm:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}

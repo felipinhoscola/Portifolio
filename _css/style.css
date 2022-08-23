@@ -1,0 +1,173 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+* {
+  color: white !important;
+}
+#treeD {
+  text-shadow: red -0.7px 0, cyan 0.7px 0;
+}
+body {
+  /* background: linear-gradient(330deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 44%, rgba(87,87,87,1) 100%);  */
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+}
+.header {
+  margin-bottom: 0;
+}
+.nav {
+  background-color: black !important;
+  margin-bottom: 40px;
+  display: flex;
+  border-bottom: 1px solid #fff;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  width: 100%;
+}
+.nav_start {
+  color: white;
+  text-shadow: red -1px 0, cyan 1px 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 0%;
+  padding: 0%;
+}
+a.nav_item:hover {
+  border-bottom: 2px solid white;
+  color: white;
+  margin-bottom: 0.2em;
+  border-radius: 1px;
+}
+.nav_icon {
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.section-top {
+  margin-bottom: 3%;
+  background-image: url(https://cdn.discordapp.com/attachments/557992840702197782/1006528310735556638/imgBlur.jpg);
+  width: 100%;
+  max-height: 50%;
+  border-radius: 0.3em;
+}
+.dev_exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+  gap: 5em;
+  height: 75%;
+  padding: 5%;
+}
+.dev_expinfos {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+.dev_expdesc {
+  align-items: flex-start;
+  font-weight: 700;
+}
+.dev_exp_title {
+  font-size: 100%;
+  font-weight: 800;
+}
+.dev_exp_description {
+  font-size: 90%;
+}
+.dev_expicon {
+  text-shadow: red -1px 0, cyan 1px 0;
+}
+.card {
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.aboutme {
+  text-align: left;
+}
+.input {
+  color: black !important;
+}
+.textarea {
+  color: black !important;
+}
+
+.card-content {
+  background-color: #363636;
+  color: white;
+}
+.content-subtitle {
+  color: white;
+  font-weight: 700;
+}
+
+.card-header {
+  background-color: black;
+}
+.message {
+  border: 2px solid rgb(222, 220, 220);
+  background-color: white;
+}
+.message-header {
+  background-color: white;
+  color: #363636;
+  border-bottom: 2px solid rgb(222, 220, 220);
+}
+.message-body {
+  border-style: none;
+}
+.footer {
+  background-color: #333333;
+  margin-top: 2em;
+}
+.button {
+  background-color: black !important;
+  box-shadow: -1px 1px 0 cyan, -2px 2px 0 red;
+}
+.button:hover {
+  box-shadow: inset -1px 1px 0 cyan, inset -2px 2px 0 red;
+  font-size: 98%;
+}
+
+@media (max-width: 990px) {
+  .nav {
+    flex-direction: column;
+    height: 5em;
+  }
+
+  .nav_start {
+    gap: 3em;
+    align-items: baseline;
+    height: 1.5em;
+  }
+  .dev_exp {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .dev_expinfos {
+    height: 100%;
+  }
+  .dev_exp_title {
+    font-size: 90%;
+  }
+  .dev_exp_description {
+    font-size: 80%;
+  }
+}
+@media (max-width: 341px) {
+  .dev_exp_title {
+    font-size: 70%;
+  }
+  .dev_exp_description {
+    font-size: 50%;
+    width: 90%;
+  }
+}
